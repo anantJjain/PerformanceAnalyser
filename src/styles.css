@@ -1,0 +1,379 @@
+.SyllabAnalysis{
+    position: absolute;
+    width: 386px;
+    height: 429px;
+    left: 1014px;
+    top: 164px;
+    border: 1px solid #EBF0F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.sideDashboard{
+    position: static;
+    width: 81px;
+    height: 28px;
+    left: 31px;
+    top: 0px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #566474;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 15px;
+}
+
+.sideSkill{
+    position: static;
+    width: 65px;
+    height: 28px;
+    left: 31px;
+    top: 0px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #445EE2;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 15px;
+}
+
+
+.sideInternships{
+    position: absolute;
+    width: 79px;
+    height: 28px;
+    left: 71px;
+    top: 127px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+
+.textHead{
+    position: absolute;
+    width: 46px;
+    height: 16px;
+    left: 0px;
+    top: 0px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+.SkillContainer{
+    position: absolute;
+    width: 717px;
+    height: 109px;
+    left: 267px;
+    top: 164px;
+    border: 1px solid #EBF0F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.TestHeading{
+    position: absolute;
+    left: 14.89%;
+    right: 28.72%;
+    top: 2%;
+    bottom: 56%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.02em;   
+    color: #222F3E; 
+}  
+
+.TestDetails{
+    position: absolute;
+    width: 320px;
+    height: 22px;
+    left: 56px;
+    top: 27px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+.ModalToggler{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    position: absolute;
+    width: 120px;
+    height: 44px;
+    left: 834px;
+    top: 197px;
+    background: #142683;
+    border-radius: 5px;
+    color:#FFFFFF ;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+}
+
+
+.QuickStats{
+    position: absolute;
+    width: 717px;
+    height: 158px;
+    left: 267px;
+    top: 303px;
+    border: 1px solid #EBF0F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.QuickStatsHeading{
+    position: absolute;
+    width: 119px;
+    height: 28px;
+    left: 297px;
+    top: 333px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.rankNum{
+    position: absolute;
+    width: 66px;
+    height: 29px;
+    left: 367px;
+    top: 381px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.PercentileNum{
+    position: absolute;
+    width: 43px;
+    height: 29px;
+    left: 604px;
+    top: 381px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.ScoreNum{
+    position: absolute;
+    width: 66px;
+    height: 29px;
+    left: 840px;
+    top: 381px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.rankName{
+    position: absolute;
+    width: 63px;
+    height: 16px;
+    left: 367px;
+    top: 415px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #9EAAB7;
+}
+
+.PercentileName{
+    position: absolute;
+    width: 65px;
+    height: 16px;
+    left: 604px;
+    top: 415px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #9EAAB7;
+}
+
+.ScoreName{
+    position: absolute;
+    width: 110px;
+    height: 16px;
+    left: 840px;
+    top: 415px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #9EAAB7;
+}
+
+.GraphBox{
+    position: absolute;
+    width: 717px;
+    height: 525px;
+    left: 267px;
+    top: 491px;
+    border: 1px solid #EBF0F5;
+    box-sizing: border-box;
+}
+
+.GraphHead{
+    position: absolute;
+    width: 142px;
+    height: 28px;
+    left: 297px;
+    top: 521px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.PercentileShow{     
+    position: absolute;
+    width: 432px;
+    height: 42px;
+    left: 297px;
+    top: 569px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+.LinePercentile{
+    position: absolute;
+    width: 657px;
+    height: 307px;
+    left: 297px;
+    top: 641px;
+    border: 1px solid #F7F8FA;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.Syllabheader{
+    position: absolute;
+    width: 166px;
+    height: 28px;
+    left: 1044px;
+    top: 194px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.AnswersPie{
+    position: absolute;
+    width: 386px;
+    height: 393px;
+    left: 1014px;
+    top: 623px;
+    border: 1px solid #EBF0F5;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.QuesAnalysis{
+    position: absolute;
+    width: 326px;
+    height: 42px;
+    left: 1044px;
+    top: 702px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+.PieGraph{
+    position: absolute;
+    width: 180.87px;
+    height: 166.02px;
+    left: 1130.98px;
+    top: 972.94px;
+    background: #438AF6;
+    border-radius: 2px;
+    transform: rotate(-90deg);
+}
+
+.QuesHead{
+    position: absolute;
+    width: 134px;
+    height: 28px;
+    left: 1044px;
+    top: 654px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
