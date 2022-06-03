@@ -18,6 +18,8 @@
     display: flex;
     width: 100%;
     overflow: hidden;
+    border: 2px red solid;
+
 }
 
 .Sidebar{
@@ -36,27 +38,11 @@
     margin-left: 120px;
 }
 
-.RightPanel{
-    border: 2px green solid;
-    width:60%;
-    height: 100vh;
-    margin-left: 200px;
-}
 
-.SyllabAnalysis{
-    /* position: absolute; */
-    width: 386px;
-    height: 429px;
-    left: 1014px;
-    top: 164px;
-    border: 1px solid #EBF0F5;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
 
 .sideDashboard{
     /* position: static; */
-    border: 2px red solid;
+    /* border: 2px red solid; */
     width: 81px;
     height: 28px;
     /* left: 31px;
@@ -76,7 +62,7 @@
 
 .sideSkill{
     /* position: static; */
-    border: 2px red solid;
+    /* border: 2px red solid; */
 
     width: 65px;
     height: 28px;
@@ -98,7 +84,7 @@
 
 .sideInternships{
     /* position: absolute; */
-    border: 2px red solid;
+    /* border: 2px red solid; */
 
     width: 79px;
     height: 28px;
@@ -137,8 +123,8 @@
     top: 164px; */
     /* border: 1px solid #EBF0F5; */
     border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
+    /* box-sizing: border-box; */
+    /* border-radius: 10px; */
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -150,6 +136,7 @@
 
 .contentSkill{
     border: 1px red solid; 
+    text-align: left;
 }
 
 .SkillName{
@@ -222,9 +209,9 @@ color: #566474;
     height: 44px;
     left: 834px;
     top: 197px; */
-    border: 2px red solid ;
+    /* border: 2px red solid ; */
     background: #142683;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     color:#FFFFFF ;
     font-family: 'DM Sans';
     font-style: normal;
@@ -236,23 +223,13 @@ color: #566474;
 
 
 .QuickStats{
-    /* position: absolute; */
-    /* width: 717px;
-    height: 158px;
-    left: 267px;
-    top: 303px; */
-    /* border: 1px solid #EBF0F5; */
     border: 1px solid black;
-    box-sizing: border-box;
-    border-radius: 10px;
 }
 
 .QuickStatsHeading{
-    /* position: absolute; */
     width: 119px;
     height: 28px;
-    /* left: 297px; */
-    /* top: 333px; */
+    border: 1px solid black;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -266,44 +243,69 @@ color: #566474;
     display: flex;
     justify-content: space-between;
     border: 2px red solid;
-    margin-top: 40px;
+}
+
+
+.rankContent{
+    display: flex;
+    border: 2px green solid;
+    flex-direction:row;
+}
+
+.rankIcon{
+    border: 2px blue solid;
 }
 
 .rank{
     border: 2px red solid;
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.percentileContent{
+    display: flex;
+    border: 2px green solid;
+    flex-direction:row;
+}
+
+.percentileIcon{
+    border: 2px blue solid;
 }
 
 .percentile{
     border: 2px red solid;
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
+
+.scoreContent{
+    display: flex;
+    border: 2px green solid;
+    flex-direction:row;
+}
+
+.scoreIcon{
+    border: 2px blue solid;
+}
+
 .score{
     border: 2px red solid;
-    width: 30%;
+    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
-
 }
 
 .Line{
-    box-sizing: border-box;
     width: 1px;
     height: 50px;
-    /* left: 483px;
-    top: 381px; */
-    border: 1px solid #EBF0F5;
-    /* border: 1px solid black; */
-    border-radius: 10px;
+    border: 1px solid black;
 }
+
 
 .rankNum{
     /* position: absolute; */
@@ -396,23 +398,14 @@ color: #566474;
 }
 
 .GraphBox{
-    /* position: absolute; */
     width: 717px;
     height: 525px;
-    left: 267px;
-    top: 491px;
-    /* border: 1px solid #EBF0F5; */
-    /* border: 1px solid #EBF0F5; */
     border: 1px solid black;
-    box-sizing: border-box;
 }
 
 .GraphHead{
-    /* position: absolute; */
     width: 142px;
     height: 28px;
-    /* left: 297px; */
-    /* top: 521px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -420,15 +413,16 @@ color: #566474;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
+    border: 1px solid black;
+}
+
+.GraphData{
+    border: 1px solid black;
 }
 
 .PercentileShow{     
-    /* position: absolute; */
     width: 432px;
     height: 42px;
-    /* left: 297px; */
-    /* top: 569px; */
-    /* margin-top: 100px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -439,24 +433,28 @@ color: #566474;
 }
 
 .LinePercentile{
-    /* position: absolute; */
+    border: 1px solid black;
     width: 657px;
     height: 307px;
-    /* left: 297px; */
-    /* top: 641px; */
-    /* margin-top: 200px; */
-    border: 1px solid #F7F8FA;
-    box-sizing: border-box;
-    border-radius: 10px;
 }
 
 
-.Syllabheader{
+.QuesPie{
+    border: 2px red solid;
+    width: 60%;
+}
+
+.PieHead{
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuesHead{
     /* position: absolute; */
-    width: 166px;
+    width: 134px;
     height: 28px;
-    /* left: 1044px; */
-    /* top: 194px; */
+    /* left: 1044px;
+    top: 654px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -464,21 +462,6 @@ color: #566474;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
-}
-
-.AnswersPie{
-    /* position: absolute; */
-    width: 386px;
-    height: 393px;
-    left: 1014px;
-    top: 623px;
-    border: 1px solid #EBF0F5;
-    box-sizing: border-box;
-    border-radius: 10px;
-}
-
-
-.QuesPie{
     border: 2px red solid;
 }
 
@@ -489,11 +472,14 @@ color: #566474;
     font-size: 16px;
     line-height: 21px;
     /* identical to box height */
-
     letter-spacing: -0.02em;
-
+    border: 2px red solid;
     color: #438AF6;
 
+}
+
+.QuesDesc{
+    border: 2px red solid;
 }
 
 
@@ -519,16 +505,46 @@ color: #566474;
     /* left: 1130.98px; */
     /* top: 972.94px; */
     /* background: #438AF6; */
-    border-radius: 2px;
+    /* border-radius: 2px; */
     transform: rotate(-90deg);
 }
 
-.QuesHead{
+.AnswersPie{
     /* position: absolute; */
-    width: 134px;
+    /* width: 386px;
+    height: 393px; */
+    /* left: 1014px;
+    top: 623px; */
+    border: 2px red solid;
+    padding: 80px;
+    /* border: 1px solid #EBF0F5; */
+    /* box-sizing: border-box; */
+    /* border-radius: 10px; */
+}
+
+
+.RightPanel{
+    border: 2px green solid;
+    width:60%;
+    height: 100vh;
+    margin-left: 200px;
+}
+
+.SyllabAnalysis{
+    width: auto;
+    height: 429px;
+    left: 1014px;
+    top: 164px;
+    border: 1px solid black;
+    /* border: 1px solid #EBF0F5; */
+    /* box-sizing: border-box; */
+    /* border-radius: 10px; */
+}
+
+.Syllabheader{
+    width: 166px;
     height: 28px;
-    /* left: 1044px;
-    top: 654px; */
+    border: 2px red solid;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;

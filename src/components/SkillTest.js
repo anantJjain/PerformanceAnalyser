@@ -89,48 +89,58 @@ function SkillTest() {
 
 
 <div className='QuickStats'>
+
   <div className='QuickStatsHeading'>Quick Statistics</div>
+
   <div className='QuickStatsContent'>
-      <div className='rank'>
-        <span className='rankNum'>{rank}</span>
-        <span className='rankName'>YOUR RANK</span>  
+
+      <div className='rankContent'>
+        <div className='rankIcon'><img src={skill}></img></div>
+        <div className='rank'>
+          <span className='rankNum'>{rank}</span>
+          <span className='rankName'>YOUR RANK</span>  
+        </div>
       </div>
-        <div className='Line'></div>
-      <div className='percentile'>
+    
+      <div className='Line'></div>
+
+      <div className='percentileContent'>
+        <div className='percentileIcon'><img src={skill}></img></div>
+        <div className='percentile'>
         <span className='PercentileNum'>{percentile}%</span>
         <span className='PercentileName'>PERCENTILE</span>  
       </div>
-        <div className='Line'></div>
-      <div className='score'>
-        <span className='ScoreNum'>{currentscore}/15</span>  
-        <span className='ScoreName'>CORRECT ANSWERS</span>  
       </div>
+
+      <div className='Line'></div>
+
+      <div className='scoreContent'>
+        <div className='scoreIcon'><img src={skill}></img></div>
+        <div className='score'>
+          <span className='ScoreNum'>{currentscore}/15</span>  
+          <span className='ScoreName'>CORRECT ANSWERS</span>  
+        </div>
+      </div>          
   </div>
-      
-    {/* <div className='rankNum'>{rank}</div>
-      <div className='rankName'>YOUR RANK</div>
-    
-      <div className='PercentileNum'>{percentile}</div>
-      <div className='PercentileName'>PERCENTILE</div>
-    
-      <div className='ScoreNum'>{currentscore}</div>
-      <div className='ScoreName'>CORRECT ANSWERS</div> */}
 </div>
 
 <div className='GraphBox'>
   
-  <h1 className='GraphHead'>Comparison Graph</h1>        
+  <h1 className='GraphHead'>Comparison Graph</h1>
+  <p className='GraphData'>
   { 
     percentile<72?<p className='PercentileShow'>You scored {percentile}% percentile which is lower than 72% which is the average percentile of all  those who took this test</p>:<p className='PercentileShow'>You scored {percentile}% percentile which is higher than 72% which is the average percentile of all those who took this test</p>
   } 
+  </p>   
 
   <Line className='LinePercentile'
       datasetIdKey='id'
       data={{
-              labels: ['0%', '20%', '40%' ,'60%','80%','100%'],
+              borderColor: "#000000",
+              labels: ['0%', '20%', '40%' ,'60%',percentile,'80%','100%'],
               datasets: [
                 {
-                  data:[5,6,10,12,14,55,percentile,45,20,10],
+                  data:[5,6,10,12,14,55,percentile],
                 },
               ],
             }}
@@ -139,18 +149,24 @@ function SkillTest() {
 
 
 <div className='QuesPie'>
-<h1 className='QuesHead'>Question Analysis</h1>
-<h1 className='QuesNumber'>{currentscore}/15</h1>        
+
+  <div className='PieHead'>
+    <span className='QuesHead'>Question Analysis</span>
+    <span className='QuesNumber'>{currentscore}/15</span>
+  </div>
+
+  <div className='QuesDesc'>      
   { 
-    currentscore<15?<p className='QuesAnalysis'>You score {currentscore} correct out of 15.You are just a few miles away.</p>:<p className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</p>
+    currentscore<15?<span className='QuesAnalysis'>You score {currentscore} correct out of 15.You are just a few miles away.</span>:<span className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</span>
   }
+  </div>
 
   <div className='AnswersPie'>
       <Doughnut 
                 className='PieGraph'
                 datasetIdKey='id'
                 data={{
-                        labels: ['Correct Answers','Incorrect Answers'],
+                        // labels: ['Correct Answers','Incorrect Answers'],
                         datasets: [
                           {
                             data:[currentscore,15-currentscore],
@@ -180,8 +196,6 @@ function SkillTest() {
     handleClose={hideModal}
 /> 
     
-       
-   
     </div>
   )
 }
