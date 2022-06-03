@@ -1,12 +1,10 @@
 import React from 'react'
-import QuesAnalysis from './QuesAnalysis'
 import SyllabAnalysis from './SyllabAnalysis'
 
 function LeftGrid() {
   return (
-    <div className='LeftGrid'>
+    <div className='RightPanel'>
       <SyllabAnalysis />
-      <QuesAnalysis />
     </div>
   )
 }

@@ -1,5 +1,35 @@
+.Navbar{
+    border: 2px red solid;
+    width: 100%;
+}
+
+.Container{
+    display: flex;
+}
+
+.Sidebar{
+    border: 2px orange  solid;
+    width:200%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.CenterGrid{
+    border: 2px blue solid;
+    width:110%;
+    height: auto;
+    margin-left: 120px;
+}
+
+.RightPanel{
+    border: 2px green solid;
+    width:60%;
+    height: 100vh;
+    margin-left: 200px;
+}
+
 .SyllabAnalysis{
-    position: absolute;
+    /* position: absolute; */
     width: 386px;
     height: 429px;
     left: 1014px;
@@ -10,7 +40,7 @@
 }
 
 .sideDashboard{
-    position: static;
+    /* position: static; */
     width: 81px;
     height: 28px;
     left: 31px;
@@ -29,7 +59,7 @@
 }
 
 .sideSkill{
-    position: static;
+    /* position: static; */
     width: 65px;
     height: 28px;
     left: 31px;
@@ -49,7 +79,7 @@
 
 
 .sideInternships{
-    position: absolute;
+    /* position: absolute; */
     width: 79px;
     height: 28px;
     left: 71px;
@@ -65,7 +95,7 @@
 
 
 .textHead{
-    position: absolute;
+    /* position: absolute; */
     width: 46px;
     height: 16px;
     left: 0px;
@@ -80,7 +110,7 @@
 }
 
 .SkillContainer{
-    position: absolute;
+    /* position: absolute; */
     width: 717px;
     height: 109px;
     left: 267px;
@@ -91,7 +121,7 @@
 }
 
 .TestHeading{
-    position: absolute;
+    /* position: absolute; */
     left: 14.89%;
     right: 28.72%;
     top: 2%;
@@ -106,7 +136,7 @@
 }  
 
 .TestDetails{
-    position: absolute;
+    /* position: absolute; */
     width: 320px;
     height: 22px;
     left: 56px;
@@ -144,7 +174,7 @@
 
 
 .QuickStats{
-    position: absolute;
+    /* position: absolute; */
     width: 717px;
     height: 158px;
     left: 267px;
@@ -155,11 +185,11 @@
 }
 
 .QuickStatsHeading{
-    position: absolute;
+    /* position: absolute; */
     width: 119px;
     height: 28px;
-    left: 297px;
-    top: 333px;
+    /* left: 297px; */
+    /* top: 333px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -169,12 +199,38 @@
     color: #1E272E;
 }
 
+.QuickStatsContent{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px red solid; */
+    margin-top: 40px;
+}
+
+.rank{
+    /* border: 2px red solid; */
+    width: 30%;
+    height: 100%;
+}
+
+.percentile{
+    /* border: 2px red solid; */
+    width: 30%;
+    height: 100%;
+
+}
+.score{
+    /* border: 2px red solid; */
+    width: 30%;
+    height: 100%;
+
+}
+
 .rankNum{
-    position: absolute;
+    /* position: absolute; */
     width: 66px;
     height: 29px;
-    left: 367px;
-    top: 381px;
+    /* left: 367px;
+    top: 381px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -185,11 +241,11 @@
 }
 
 .PercentileNum{
-    position: absolute;
+    /* position: absolute; */
     width: 43px;
     height: 29px;
-    left: 604px;
-    top: 381px;
+    /* left: 604px;
+    top: 381px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -200,11 +256,11 @@
 }
 
 .ScoreNum{
-    position: absolute;
+    /* position: absolute; */
     width: 66px;
     height: 29px;
-    left: 840px;
-    top: 381px;
+    /* left: 840px;
+    top: 381px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -215,11 +271,11 @@
 }
 
 .rankName{
-    position: absolute;
+    /* position: absolute; */
     width: 63px;
     height: 16px;
-    left: 367px;
-    top: 415px;
+    /* left: 367px; */
+    top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -230,11 +286,11 @@
 }
 
 .PercentileName{
-    position: absolute;
+    /* position: absolute; */
     width: 65px;
     height: 16px;
-    left: 604px;
-    top: 415px;
+    /* left: 604px; */
+    top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -245,11 +301,11 @@
 }
 
 .ScoreName{
-    position: absolute;
+    /* position: absolute; */
     width: 110px;
     height: 16px;
-    left: 840px;
-    top: 415px;
+    /* left: 840px; */
+    top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -260,7 +316,7 @@
 }
 
 .GraphBox{
-    position: absolute;
+    /* position: absolute; */
     width: 717px;
     height: 525px;
     left: 267px;
@@ -270,11 +326,11 @@
 }
 
 .GraphHead{
-    position: absolute;
+    /* position: absolute; */
     width: 142px;
     height: 28px;
-    left: 297px;
-    top: 521px;
+    /* left: 297px; */
+    /* top: 521px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -285,11 +341,12 @@
 }
 
 .PercentileShow{     
-    position: absolute;
+    /* position: absolute; */
     width: 432px;
     height: 42px;
-    left: 297px;
-    top: 569px;
+    /* left: 297px; */
+    /* top: 569px; */
+    margin-top: 100px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -300,11 +357,12 @@
 }
 
 .LinePercentile{
-    position: absolute;
+    /* position: absolute; */
     width: 657px;
     height: 307px;
-    left: 297px;
-    top: 641px;
+    /* left: 297px; */
+    /* top: 641px; */
+    margin-top: 200px;
     border: 1px solid #F7F8FA;
     box-sizing: border-box;
     border-radius: 10px;
@@ -312,11 +370,11 @@
 
 
 .Syllabheader{
-    position: absolute;
+    /* position: absolute; */
     width: 166px;
     height: 28px;
-    left: 1044px;
-    top: 194px;
+    /* left: 1044px; */
+    /* top: 194px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -327,7 +385,7 @@
 }
 
 .AnswersPie{
-    position: absolute;
+    /* position: absolute; */
     width: 386px;
     height: 393px;
     left: 1014px;
@@ -338,7 +396,7 @@
 }
 
 .QuesAnalysis{
-    position: absolute;
+    /* position: absolute; */
     width: 326px;
     height: 42px;
     left: 1044px;
@@ -353,18 +411,18 @@
 }
 
 .PieGraph{
-    position: absolute;
+    /* position: absolute; */
     width: 180.87px;
     height: 166.02px;
-    left: 1130.98px;
-    top: 972.94px;
-    background: #438AF6;
+    /* left: 1130.98px; */
+    /* top: 972.94px; */
+    /* background: #438AF6; */
     border-radius: 2px;
     transform: rotate(-90deg);
 }
 
 .QuesHead{
-    position: absolute;
+    /* position: absolute; */
     width: 134px;
     height: 28px;
     left: 1044px;
