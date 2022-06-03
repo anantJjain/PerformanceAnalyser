@@ -1,17 +1,32 @@
 .Navbar{
     border: 2px red solid;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
+
+.Logo{
+    border: 2px red solid;
+}
+
+.Profile{
+    border: 2px red solid;
+}
+
+
 
 .Container{
     display: flex;
+    width: 100%;
+    overflow: hidden;
 }
 
 .Sidebar{
     border: 2px orange  solid;
     width:200%;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
 }
 
 .CenterGrid{
@@ -41,10 +56,11 @@
 
 .sideDashboard{
     /* position: static; */
+    border: 2px red solid;
     width: 81px;
     height: 28px;
-    left: 31px;
-    top: 0px;
+    /* left: 31px;
+    top: 0px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -52,14 +68,16 @@
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #566474;
-    flex: none;
+    /* flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 15px;
+    margin: 0px 15px; */
 }
 
 .sideSkill{
     /* position: static; */
+    border: 2px red solid;
+
     width: 65px;
     height: 28px;
     left: 31px;
@@ -71,19 +89,21 @@
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #445EE2;
-    flex: none;
+    /* flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 15px;
+    margin: 0px 15px; */
 }
 
 
 .sideInternships{
     /* position: absolute; */
+    border: 2px red solid;
+
     width: 79px;
     height: 28px;
     left: 71px;
-    top: 127px;
+    /* top: 127px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -111,13 +131,54 @@
 
 .SkillContainer{
     /* position: absolute; */
-    width: 717px;
-    height: 109px;
+    /* width: 717px; */
+    /* height: 109px;
     left: 267px;
-    top: 164px;
-    border: 1px solid #EBF0F5;
+    top: 164px; */
+    /* border: 1px solid #EBF0F5; */
+    border: 1px solid black;
     box-sizing: border-box;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.icon{
+    border: 1px red solid;
+}
+
+.contentSkill{
+    border: 1px red solid; 
+}
+
+.SkillName{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    color: #222F3E;
+}
+
+.SkillDetails{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 180%;
+/* identical to box height, or 22px */
+
+letter-spacing: -0.02em;
+
+/* secondary text */
+
+color: #566474;
+
 }
 
 .TestHeading{
@@ -157,10 +218,11 @@
     align-items: center;
     padding: 4px;
     position: absolute;
-    width: 120px;
+    /* width: 120px;
     height: 44px;
     left: 834px;
-    top: 197px;
+    top: 197px; */
+    border: 2px red solid ;
     background: #142683;
     border-radius: 5px;
     color:#FFFFFF ;
@@ -175,11 +237,12 @@
 
 .QuickStats{
     /* position: absolute; */
-    width: 717px;
+    /* width: 717px;
     height: 158px;
     left: 267px;
-    top: 303px;
-    border: 1px solid #EBF0F5;
+    top: 303px; */
+    /* border: 1px solid #EBF0F5; */
+    border: 1px solid black;
     box-sizing: border-box;
     border-radius: 10px;
 }
@@ -202,27 +265,44 @@
 .QuickStatsContent{
     display: flex;
     justify-content: space-between;
-    /* border: 2px red solid; */
+    border: 2px red solid;
     margin-top: 40px;
 }
 
 .rank{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .percentile{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
 }
 .score{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     width: 30%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.Line{
+    box-sizing: border-box;
+    width: 1px;
+    height: 50px;
+    /* left: 483px;
+    top: 381px; */
+    border: 1px solid #EBF0F5;
+    /* border: 1px solid black; */
+    border-radius: 10px;
 }
 
 .rankNum{
@@ -321,7 +401,9 @@
     height: 525px;
     left: 267px;
     top: 491px;
-    border: 1px solid #EBF0F5;
+    /* border: 1px solid #EBF0F5; */
+    /* border: 1px solid #EBF0F5; */
+    border: 1px solid black;
     box-sizing: border-box;
 }
 
@@ -346,7 +428,7 @@
     height: 42px;
     /* left: 297px; */
     /* top: 569px; */
-    margin-top: 100px;
+    /* margin-top: 100px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -362,7 +444,7 @@
     height: 307px;
     /* left: 297px; */
     /* top: 641px; */
-    margin-top: 200px;
+    /* margin-top: 200px; */
     border: 1px solid #F7F8FA;
     box-sizing: border-box;
     border-radius: 10px;
@@ -395,6 +477,26 @@
     border-radius: 10px;
 }
 
+
+.QuesPie{
+    border: 2px red solid;
+}
+
+.QuesNumber{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: -0.02em;
+
+    color: #438AF6;
+
+}
+
+
 .QuesAnalysis{
     /* position: absolute; */
     width: 326px;
@@ -425,8 +527,8 @@
     /* position: absolute; */
     width: 134px;
     height: 28px;
-    left: 1044px;
-    top: 654px;
+    /* left: 1044px;
+    top: 654px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;

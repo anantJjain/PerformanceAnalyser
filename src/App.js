@@ -14,11 +14,6 @@ function App() {
         <div><SkillTest /></div>
         <div><LeftGrid /></div>
       </div>
-      {/* <div className='Conatiner'>
-        <div><Sidebar /></div>
-        <div><SkillTest /></div>
-        <div><LeftGrid /></div>
-      </div> */}
     </div>
   );
 }

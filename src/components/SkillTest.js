@@ -5,6 +5,7 @@ import { Doughnut } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
 import Modal from './Modal'
+import skill from '../../src/components/image4.png'
 
 function SkillTest() {
 
@@ -19,11 +20,11 @@ function SkillTest() {
   const minCurrentScore = 0;
   const maxCurrentScore = 15;
 
-  const onRankIncrease = () => setRank(rank => rank + 1 )
-  const onRankDecrease = () => {
+  const onRankDecrease = () => setRank(rank => rank + 1 )
+  const onRankIncrease = () => {
                                     if(rank>minRank)
                                       {
-                                        setRank(rank=>rank+1)
+                                        setRank(rank=>rank-1)
                                       }
                                   }
   
@@ -72,12 +73,20 @@ function SkillTest() {
 
     <div className='CenterGrid'>
       <div className='textHead'>Skill Test</div>
-<div className='SkillContainer'>
-  <div className='TestHeading'>Hypertext Markup Language</div>
-  <div className='TestDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div>
-</div>
 
-<button onClick={showModal} className='ModalToggler'>Update</button>
+      <div className='SkillContainer'>
+        <div className='icon'><img src={skill}></img></div>
+        <div className='contentSkill'>
+          <div className='SkillName'>Hypertext Markup Language</div>
+          <div className='SkillDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div>
+        </div>
+        <div>
+          <button onClick={showModal} className='ModalToggler'>Update</button>
+        </div>
+        {/* <div className='TestHeading'>Hypertext Markup Language</div>
+        <div className='TestDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div> */}
+      </div>
+
 
 <div className='QuickStats'>
   <div className='QuickStatsHeading'>Quick Statistics</div>
@@ -86,12 +95,14 @@ function SkillTest() {
         <span className='rankNum'>{rank}</span>
         <span className='rankName'>YOUR RANK</span>  
       </div>
+        <div className='Line'></div>
       <div className='percentile'>
-        <span className='PercentileNum'>{percentile}</span>
+        <span className='PercentileNum'>{percentile}%</span>
         <span className='PercentileName'>PERCENTILE</span>  
       </div>
+        <div className='Line'></div>
       <div className='score'>
-        <span className='ScoreNum'>{currentscore}</span>  
+        <span className='ScoreNum'>{currentscore}/15</span>  
         <span className='ScoreName'>CORRECT ANSWERS</span>  
       </div>
   </div>
@@ -126,7 +137,10 @@ function SkillTest() {
     />
 </div>     
 
-<h1 className='QuesHead'>Question Analysis {currentscore}/15</h1>        
+
+<div className='QuesPie'>
+<h1 className='QuesHead'>Question Analysis</h1>
+<h1 className='QuesNumber'>{currentscore}/15</h1>        
   { 
     currentscore<15?<p className='QuesAnalysis'>You score {currentscore} correct out of 15.You are just a few miles away.</p>:<p className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</p>
   }
@@ -149,6 +163,10 @@ function SkillTest() {
                       }}
       />
   </div>
+
+
+</div>            
+
 
 <Modal 
     data={data} 

@@ -24,7 +24,7 @@ return (
 
       <section className="modal-main">
 
-        <h1>Update Skill Scores</h1>
+        <h1 className='ModalHead'>Update Scores</h1>
 
         <div className='HoriLine'></div>
 
@@ -43,12 +43,13 @@ return (
         {<br></br>}
         {<br></br>}
 
+        <div className='HoriLine'></div>
         {/* <button type="button" onClick={handleSave}> */}
-        <button type="button">
+        <button className='buttonSave'>
           Save
         </button>
         
-        <button type="button" onClick={handleClose}>
+        <button className='buttonClose' onClick={handleClose}>
           Close
         </button>
 
