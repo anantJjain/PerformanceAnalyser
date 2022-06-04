@@ -6,6 +6,11 @@ import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
 import Modal from './Modal'
 import skill from '../../src/components/image4.png'
+import rank from '../../src/components/rank.png'
+import percentile from '../../src/components/percentile.png'
+import score from '../../src/components/score.png'
+import Arrow from '../../src/components/QuesAir.png'
+// import eclipse from '../../src/components/eclipse.png'
 
 function SkillTest() {
 
@@ -81,7 +86,9 @@ function SkillTest() {
           <div className='SkillDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div>
         </div>
         <div>
-          <button onClick={showModal} className='ModalToggler'>Update</button>
+          <button 
+            onClick={showModal} 
+            className='ModalToggler'>Update</button>
         </div>
         {/* <div className='TestHeading'>Hypertext Markup Language</div>
         <div className='TestDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div> */}
@@ -95,7 +102,7 @@ function SkillTest() {
   <div className='QuickStatsContent'>
 
       <div className='rankContent'>
-        <div className='rankIcon'><img src={skill}></img></div>
+        <div className='rankIcon'><img src={rank}></img></div>
         <div className='rank'>
           <span className='rankNum'>{rank}</span>
           <span className='rankName'>YOUR RANK</span>  
@@ -105,7 +112,7 @@ function SkillTest() {
       <div className='Line'></div>
 
       <div className='percentileContent'>
-        <div className='percentileIcon'><img src={skill}></img></div>
+        <div className='percentileIcon'><img src={percentile}></img></div>
         <div className='percentile'>
         <span className='PercentileNum'>{percentile}%</span>
         <span className='PercentileName'>PERCENTILE</span>  
@@ -115,7 +122,7 @@ function SkillTest() {
       <div className='Line'></div>
 
       <div className='scoreContent'>
-        <div className='scoreIcon'><img src={skill}></img></div>
+        <div className='scoreIcon'><img src={score}></img></div>
         <div className='score'>
           <span className='ScoreNum'>{currentscore}/15</span>  
           <span className='ScoreName'>CORRECT ANSWERS</span>  
@@ -124,7 +131,7 @@ function SkillTest() {
   </div>
 </div>
 
-<div className='GraphBox'>
+{/* <div className='GraphBox'>
   
   <h1 className='GraphHead'>Comparison Graph</h1>
   <p className='GraphData'>
@@ -145,7 +152,7 @@ function SkillTest() {
               ],
             }}
     />
-</div>     
+</div>      */}
 
 
 <div className='QuesPie'>
@@ -157,19 +164,21 @@ function SkillTest() {
 
   <div className='QuesDesc'>      
   { 
-    currentscore<15?<span className='QuesAnalysis'>You score {currentscore} correct out of 15.You are just a few miles away.</span>:<span className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</span>
+    currentscore<15?<span className='QuesAnalysis'>You score {currentscore} questions correct out of 15. However it still needs improvements.</span>:<span className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</span>
   }
   </div>
 
   <div className='AnswersPie'>
+      <img className='Arrow' src={Arrow}></img>
       <Doughnut 
                 className='PieGraph'
                 datasetIdKey='id'
                 data={{
-                        // labels: ['Correct Answers','Incorrect Answers'],
                         datasets: [
                           {
                             data:[currentscore,15-currentscore],
+                            // borderWidth:'100px',
+                            // radius:'10px',
                             backgroundColor: [
                               '#438AF6',
                               'rgba(67, 138, 246, 0.1)'

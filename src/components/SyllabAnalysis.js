@@ -5,14 +5,14 @@ function SyllabAnalysis() {
   return (
     <div className='SyllabAnalysis'>
       <div className='Syllabheader'>Syllabus wise Analysis</div>
-      <p>HTML Tools,Forms,History</p>
-      <progress value="80" max="100"></progress><span>80%</span>
-      <p>Tags and References in HTML</p>
-      <progress value="60" max="100"></progress><span>60%</span>
-      <p>Tables and CSS Basics</p>
-      <progress value="24" max="100"></progress><span>24%</span>
-      <p>Forms</p>
-      <progress value="96" max="100"></progress><span>96%</span>
+      <p className='testTags'>HTML Tools,Forms,History</p>
+      <progress className='HTML' value="80" max="100"></progress><span>80%</span>
+      <p className='testTags'>Tags and References in HTML</p>
+      <progress className='TAGS' value="60" max="100"></progress><span>60%</span>
+      <p className='testTags'>Tables and CSS Basics</p>
+      <progress className='TABLES' value="24" max="100"></progress><span>24%</span>
+      <p className='testTags'>Forms</p>
+      <progress className='FORMS' value="96" max="100"></progress><span>96%</span>
       
       
       
