@@ -14,6 +14,15 @@ import Arrow from '../../src/components/QuesAir.png'
 
 function SkillTest() {
 
+  // let customRadius = ( percentile ) =>
+  // {
+    
+  //   let index = percentile.dataIndex;
+  //   let value = context.dataset.data[ index ];
+  //   return index === 3 || value >= 8 ?
+  //          10 :
+  //          2;
+  // }
   const [show,setShow] = useState(false)
   const [rank,setRank] = useState(5)
   const [percentile,setPercentile] = useState(97)
@@ -42,7 +51,8 @@ function SkillTest() {
   
                                       }
   const onPercentileDecrease = () =>{
-                                        if(percentile>minPercentile)
+                                      
+                                      if(percentile>minPercentile)
                                         {
                                           setPercentile(percentile => percentile -1 );
                                         }
@@ -131,7 +141,7 @@ function SkillTest() {
   </div>
 </div>
 
-{/* <div className='GraphBox'>
+<div className='GraphBox'>
   
   <h1 className='GraphHead'>Comparison Graph</h1>
   <p className='GraphData'>
@@ -140,19 +150,53 @@ function SkillTest() {
   } 
   </p>   
 
-  <Line className='LinePercentile'
-      datasetIdKey='id'
+
+
+
+
+
+
+  <Line 
+      className='LinePercentile'
+      options={
+                  {
+                    scales:{x:{ grid:{display:false,drawBorder:false}},y:{ grid:{display:false,drawBorder:false},ticks:{display:false}  }},
+                    legend:{display:false},
+                    // elements:{line:{borderWidth:'1px'}}
+                  }
+              } 
       data={{
-              borderColor: "#000000",
-              labels: ['0%', '20%', '40%' ,'60%',percentile,'80%','100%'],
-              datasets: [
-                {
-                  data:[5,6,10,12,14,55,percentile],
-                },
-              ],
+              labels: ['0%', '20%', '40%' ,'60%','80%','100%'],
+              datasets: [{
+                  label:'none',
+                  data:[5,66,9,42,5,95],
+                  // borderWidth:'1px',
+                  borderColor:'#C8D6E5',
+                  // pointRadius:'0px',
+                  tension:0.5
+                }],
             }}
+            
     />
-</div>      */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>     
 
 
 <div className='QuesPie'>

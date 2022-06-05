@@ -26,8 +26,8 @@ function Navbar() {
       </div>
 
       <div className='Profile'>
-        <div><img src={ProfileLogo}></img></div>
-        <div>Anant Jain</div>
+        <div><img src={ProfileLogo} className='ProfileImage'></img></div>
+        <div className='ProfileName'>Anant Jain</div>
       </div>  
     </div>
   )

@@ -3,9 +3,13 @@ import SyllabAnalysis from './SyllabAnalysis'
 
 function LeftGrid() {
   return (
-    <div className='RightPanel'>
+    <>
       <SyllabAnalysis />
-    </div>
+      {/* // <div className='RightPanel'> */}
+    {/* </div> */}
+
+    </>
+    
   )
 }
 

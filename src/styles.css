@@ -2,7 +2,7 @@
 
 
 .Navbar{
-    border: 2px red solid;
+    border-bottom: 2px #EBF0F5 solid;
     display: flex;
     justify-content: space-between;
     height: 87px;
@@ -20,42 +20,67 @@
     flex-direction: row;
     justify-content: center;
     align-items: center; */
-    padding: 8px;
+    /* padding: 8px; */
     gap: 10px;
     /* position: absolute; */
     /* left: 68.34%;
     right: 3.04%; */
-    top: 0%;
-    bottom: 0%;
+    /* top: 0%;
+    bottom: 0%; */
     /* border: 1px solid #EBF0F5; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.ProfileImage{
+    width: 26px;
+    height: 26px;
+    /* border: 2px red solid; */
+}
+
+.ProfileName{
+    width: 108px;
+    /* border: 2px red solid; */
+    text-align: left;
+    height: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
 }
 
 
 
 .Container{
     display: flex;
-    width: 100%;
+    width: auto;
     overflow: hidden;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 
 }
 
 .Sidebar{
-    border: 2px orange  solid;
-    width:200%;
+    border-right: 2px #EBF0F5  solid;
+    /* border-right: 2px red  solid; */
+    /* width:200%; */
     height: 100vh;
     /* overflow: hidden; */
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 .CenterGrid{
     /* border: 2px blue solid; */
-    width:110%;
+    width:auto;
     height: auto;
-    margin-left: 120px;
+    margin-left: 40px;
 }
 
 
@@ -63,8 +88,10 @@
 .sideDashboard{
     /* position: static; */
     /* border: 2px red solid; */
+    margin-left: 40px;
     width: 81px;
     height: 28px;
+    margin-top: 44px;
     /* left: 31px;
     top: 0px; */
     font-family: 'DM Sans';
@@ -80,12 +107,28 @@
     margin: 0px 15px; */
 }
 
+.DashboardIcon{
+    position: absolute;
+    /* border: 2px red solid; */
+    margin-left: -10px;
+}
+.line{
+    /* position: relative; */
+    margin-left: 3px;
+}
+.dash{
+    margin-left: 21px;
+}
+
 .sideSkill{
+    width: 186px;
+    height: 50px;
+    margin-right: 40px;
     /* position: static; */
     /* border: 2px red solid; */
-
-    width: 65px;
-    height: 28px;
+    margin-top: 26px;
+    /* width: 65px;
+    height: 28px; */
     left: 31px;
     top: 0px;
     font-family: 'DM Sans';
@@ -95,6 +138,11 @@
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #445EE2;
+    background: #F7F8FA;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 0px 100px 100px 0px;
     /* flex: none;
     order: 1;
     flex-grow: 0;
@@ -102,10 +150,24 @@
 }
 
 
+.SkillIcon{
+    position: absolute;
+    /* border: 2px red solid; */
+    margin-left: 30px;
+}
+
+.Badge{
+    position: relative;
+    /* border: 2px red solid; */
+    margin-top: -23px;
+}
+
+
 .sideInternships{
     /* position: absolute; */
     /* border: 2px red solid; */
-
+    margin-top: 26px;
+    margin-left: 40px;
     width: 79px;
     height: 28px;
     left: 71px;
@@ -116,7 +178,23 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    color: #566474;
+    color: #566474;   
+}
+
+.internIcon{
+    position: absolute;
+    margin-left: -40px;
+    /* border: 2px red solid; */
+}
+.internIcon2{
+    position: relative;
+    /* border: 2px red solid; */
+    margin-top: -35px;
+    margin-left: 5px;
+}
+
+.intern{
+    margin-left: 20px;
 }
 
 
@@ -124,8 +202,8 @@
     /* position: absolute; */
     width: 46px;
     height: 16px;
-    left: 0px;
-    top: 0px;
+    /* margin-left: 40px; */
+    margin-top: 30px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -133,6 +211,8 @@
     line-height: 16px;
     letter-spacing: -0.02em;
     color: #566474;
+    /* border: 1px solid red; */
+
 }
 
 .SkillContainer{
@@ -152,6 +232,7 @@
     height: 109px;
     border: 1px solid #EBF0F5;
     border-radius: 10px;
+    margin-top: 30px;
 }
 
 .icon{
@@ -245,9 +326,9 @@ color: #566474;
 .QuickStats{
     /* border: 1px solid black; */
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 90px;
     position: absolute;
-    width: 717px;
+    width: 757px;
     height: 158px;
     /* left: 267px; */
     top: 253px;
@@ -450,9 +531,12 @@ color: #566474;
 }
 
 .GraphBox{
-    width: 717px;
+    width: 757px;
     height: 525px;
-    border: 1px solid black;
+    border: 1px solid #EBF0F5;
+    border-radius: 10px;
+    margin-top: 206px;
+    /* border: 1px solid black; */
 }
 
 .GraphHead{
@@ -465,11 +549,13 @@ color: #566474;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 .GraphData{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .PercentileShow{     
@@ -479,14 +565,16 @@ color: #566474;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 150%;
+    /* line-height: 150%; */
     letter-spacing: -0.02em;
     color: #566474;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .LinePercentile{
-    border: 1px solid black;
-    width: 657px;
+    /* border: 1px solid black; */
+    width: 694px;
     height: 307px;
 }
 
@@ -597,22 +685,21 @@ color: #566474;
 
 
 .RightPanel{
-    /* border: 2px green solid; */
-    width:auto;
-    height: 100vh;
-    margin-left: 200px;
+    border: 2px green solid;
 }
 
 .SyllabAnalysis{
 
     box-sizing: border-box;
+    /* border: 2px green solid; */
     position: absolute;
     width: 386px;
     height: 429px;
-    border: 1px solid #EBF0F5;
+    margin-left: 30px;
+    /* border: 1px solid #EBF0F5; */
     border-radius: 10px;
     /* border: 1px solid black; */
-    border: 1px solid #EBF0F5;
+    /* border: 1px solid #EBF0F5; */
     /* box-sizing: border-box; */
     /* border-radius: 10px; */
 }
@@ -625,22 +712,22 @@ color: #566474;
 
 .HTML{
     margin-left: 30px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .TAGS{
     margin-left: 30px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .TABLES{
     margin-left: 30px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .FORMS{
     margin-left: 30px;
-    border: 2px red solid;   
+    /* border: 2px red solid;    */
 }
 
 
