@@ -12,7 +12,6 @@ import Ellipse from '../assets/Ellipse125.png'
 import graph from '../assets/graph.png'
 import score1 from '../assets/score1.png'
 import trophy from '../assets/trophy.png'
-import SyllabAnalysis from './SyllabAnalysis'
 
 function SkillTest() {
 
