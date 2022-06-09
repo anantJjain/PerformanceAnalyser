@@ -1,49 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
-
 .Navbar{
     border-bottom: 2px #EBF0F5 solid;
+    position: relative;
     display: flex;
     justify-content: space-between;
     height: 87px;
+    width: 100%;
 }
 
 .Logo{
-    /* border: 2px red solid; */
-    margin-top: 28px;
-    margin-left: 40px;
+    position: absolute;
+    height: 40%;
+    top: 50%; 
+    left: 2%;
+    transform: translate(0%,-50%);
+}
+
+.Uout{
+    position: absolute;
+    margin: 6px 0px 0px 0px;
+}
+
+.Uin{
+    position: relative;
+    margin: 10px 0px 5px 5px;  
 }
 
 .Profile{
-    /* border: 2px red solid; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    /* padding: 8px; */
-    gap: 10px;
-    /* position: absolute; */
-    /* left: 68.34%;
-    right: 3.04%; */
-    /* top: 0%;
-    bottom: 0%; */
-    /* border: 1px solid #EBF0F5; */
-    /* border: 1px solid red; */
+    position: absolute;
     border-radius: 10px;
+    gap: 10px;
     display: flex;
     align-items: center;
-    margin-right: 60px;
+    top: 50%; 
+    right: 2%;
+    transform: translate(0%,-50%);
+    height: 50%;
+    border: 1px solid #EBF0F5;  
 }
 
 .ProfileImage{
     width: 26px;
     height: 26px;
-    /* border: 2px red solid; */
 }
 
 .ProfileName{
-    width: 108px;
-    /* border: 2px red solid; */
+    width: 108px;  
     text-align: left;
     height: 28px;
     font-family: 'DM Sans';
@@ -55,155 +58,117 @@
     color: #1E272E;
 }
 
-
-
 .Container{
     display: flex;
-    width: auto;
-    overflow: hidden;
-    /* border: 2px red solid; */
-
+    position: relative;
+    height: 100vh;
 }
 
 .Sidebar{
-    border-right: 2px #EBF0F5  solid;
-    /* border-right: 2px red  solid; */
-    /* width:200%; */
-    height: 100vh;
-    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     width: auto;
+    height:150vh;
+    width: 15%;
+    position: absolute;
+    border-right: 2px #EBF0F5 solid;
 }
 
 .CenterGrid{
-    /* border: 2px blue solid; */
-    width:auto;
-    height: auto;
-    margin-left: 40px;
+    position: absolute;
+    margin-left: 18%;
+    width: 50%;
 }
 
-
-
 .sideDashboard{
-    /* position: static; */
-    /* border: 2px red solid; */
-    margin-left: 40px;
-    width: 81px;
-    height: 28px;
-    margin-top: 44px;
-    /* left: 31px;
-    top: 0px; */
+    position: relative;
+    margin: 0px 0px 0px 20px; 
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    color: #566474;
-    /* flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 15px; */
+    padding:20px 0px 20px 30px;
+}
+
+.Navlink1{
+    margin-top: 44px;
+}
+
+.Navlink2{
+    margin-top: 10px;
 }
 
 .DashboardIcon{
     position: absolute;
-    /* border: 2px red solid; */
-    margin-left: -10px;
+    margin: -1px 0px 0px -5px;
 }
+
 .line{
-    /* position: relative; */
-    margin-left: 3px;
+    margin: 0px 0px 0px 3px;
 }
+
 .dash{
-    margin-left: 21px;
+    margin: 0px 0px 0px 21px;
 }
 
 .sideSkill{
-    width: 186px;
-    height: 50px;
-    margin-right: 40px;
-    /* position: static; */
-    /* border: 2px red solid; */
-    margin-top: 26px;
-    /* width: 65px;
-    height: 28px; */
-    left: 31px;
-    top: 0px;
+    position: relative;
+    margin: 0px 0px 0px 20px; 
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    color: #445EE2;
-    background: #F7F8FA;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    border-radius: 0px 100px 100px 0px;
-    /* flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 15px; */
+    padding:20px 0px 20px 30px;
 }
-
 
 .SkillIcon{
     position: absolute;
-    /* border: 2px red solid; */
-    margin-left: 30px;
+    margin: 0px 0px 0px 30px;
 }
 
 .Badge{
     position: relative;
-    /* border: 2px red solid; */
-    margin-top: -23px;
+    margin: -23px 0px 0px 0px;
 }
 
+.SkillIcon1{
+    position: absolute;
+    margin: -5px 0px 0px -2px;
+}
+
+.Badge1{
+    position: relative;
+    margin: -21.5px 0px 0px 0.5px;
+}
 
 .sideInternships{
-    /* position: absolute; */
-    /* border: 2px red solid; */
-    margin-top: 26px;
-    margin-left: 40px;
-    width: 79px;
-    height: 28px;
-    left: 71px;
-    /* top: 127px; */
+    position: relative;
+    margin: 0px 0px 0px 20px; 
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 28px;
     letter-spacing: -0.02em;
-    color: #566474;   
+    padding:20px 0px 20px 30px;
 }
 
 .internIcon{
     position: absolute;
-    margin-left: -40px;
-    /* border: 2px red solid; */
+    margin: 0px 0px 0px -40px;
 }
+
 .internIcon2{
     position: relative;
-    /* border: 2px red solid; */
-    margin-top: -35px;
-    margin-left: 5px;
+    margin: -35px 0px 0px 5px;
 }
 
 .intern{
-    margin-left: 20px;
+    margin: 0px 0px 0px 20px;
 }
 
-
 .textHead{
-    /* position: absolute; */
     width: 46px;
     height: 16px;
-    /* margin-left: 40px; */
-    margin-top: 30px;
+    margin: 30px 0px 0px 10px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
@@ -211,40 +176,21 @@
     line-height: 16px;
     letter-spacing: -0.02em;
     color: #566474;
-    /* border: 1px solid red; */
-
 }
 
 .SkillContainer{
-    /* position: absolute; */
-    /* width: 717px; */
-    /* height: 109px;
-    left: 267px;
-    top: 164px; */
-    /* border: 1px solid #EBF0F5; */
-    /* border: 1px solid black; */
-    /* box-sizing: border-box; */
-    /* border-radius: 10px; */
     display: flex;
-    /* justify-content: space-around; */
-    padding: 20px;
-    width: 717px;
-    height: 109px;
+    padding: 30px;
+    width: auto;
+    height: auto;
     border: 1px solid #EBF0F5;
     border-radius: 10px;
-    margin-top: 30px;
-}
-
-.icon{
-    /* border: 1px red solid; */
-    margin-top: 30px;
-    margin-left: 30px;
+    margin: 30px 0px 0px 0px;
 }
 
 .contentSkill{
-    /* border: 1px red solid;  */
     text-align: left;
-    margin-left: 20.44px;
+    margin: 0px 0px 0px 20.44px;
 }
 
 .SkillName{
@@ -253,32 +199,34 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    margin-top: 30px;
-    /* identical to box height */
-
     letter-spacing: -0.02em;
-
     color: #222F3E;
 }
 
 .SkillDetails{
     font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 180%;
-/* identical to box height, or 22px */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
 
-letter-spacing: -0.02em;
-
-/* secondary text */
-
-color: #566474;
-
+.ModalToggler{
+    padding: 4px;
+    width: 120px;
+    height: 44px;
+    margin: 0px 0px 0px auto;
+    background: #142683;
+    border-radius: 5px;
+    border-color: #142683;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .TestHeading{
-    /* position: absolute; */
     left: 14.89%;
     right: 28.72%;
     top: 2%;
@@ -293,7 +241,6 @@ color: #566474;
 }  
 
 .TestDetails{
-    /* position: absolute; */
     width: 320px;
     height: 22px;
     left: 56px;
@@ -307,140 +254,90 @@ color: #566474;
     color: #566474;
 }
 
-.ModalToggler{
-    align-items: center;
-    padding: 4px;
-    width: 120px;
-    height: 44px;
-    margin-top: 30px;
-    margin-left: 150px;
-    background: #142683;
-    border-radius: 5px;
-    border-color: #142683;
-    color: #FFFFFF;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-
-
 .QuickStats{
-    /* border: 1px solid black; */
-    box-sizing: border-box;
-    margin-top: 90px;
-    position: absolute;
-    width: 757px;
-    height: 158px;
-    /* left: 267px; */
-    top: 253px;
-    border: 1px solid #EBF0F5;
+    padding: 30px;
     border-radius: 10px;
-
+    margin: 50px 0px;
+    border: 1px solid #EBF0F5;
 }
 
 .QuickStatsHeading{
-    width: 119px;
-    height: 28px;
-    /* border: 1px solid black; */
+    width: 20%;
+    height: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
-    margin-top: 30px;
-    margin-left: 30px;
 }
 
 .QuickStatsContent{
     display: flex;
     justify-content: space-between;
-    /* border: 2px red solid; */
-    margin-left: 30px;
-    margin-top: 20px;
+    margin: 20px 0px;
 }
-
 
 .rankContent{
     display: flex;
-    /* border: 2px green solid; */
     flex-direction:row;
     text-align:left;
+    padding: 10px;    
 }
 
-.rankIcon{
-    /* border: 2px blue solid; */
+.Ellipse{
+    position: absolute;
+}
+
+.Trophy{
+    position: relative;
+    text-align: center;
+    margin: -40px 0px 0px 0px;  
 }
 
 .rank{
-    /* border: 2px red solid; */
-    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin: 0px 60px;
 }
 
 .percentileContent{
     display: flex;
-    /* border: 2px green solid; */
     flex-direction:row;
     text-align:left;
-}
-
-.percentileIcon{
-    /* border: 2px blue solid; */
+    padding: 10px;    
 }
 
 .percentile{
-    /* border: 2px red solid; */
-    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-
+    margin: 0px 60px;
 }
 
 .scoreContent{
     display: flex;
-    /* border: 2px green solid; */
     flex-direction:row;
     text-align:left;
-}
-
-.scoreIcon{
-    /* border: 2px blue solid; */
+    padding: 10px;    
 }
 
 .score{
-    /* border: 2px red solid; */
-    /* width: 30%; */
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-
+    margin: 0px 60px;
 }
 
 .Line{
-    box-sizing: border-box;
-    /* position: absolute; */
-    width: 1px;
-    height: 60px;
-    left: 483px;
-    top: 381px;
-    border: 1px solid #EBF0F5;
+    width: 0.01%;
+    height: auto;
     border-radius: 10px;
 }
 
-
 .rankNum{
-    /* position: absolute; */
-    width: 66px;
-    height: 29px;
-    /* left: 367px;
-    top: 381px; */
+    width: auto;
+    height: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -450,12 +347,9 @@ color: #566474;
     color: #1E272E;
 }
 
-.PercentileNum{
-    /* position: absolute; */
-    width: 43px;
-    height: 29px;
-    /* left: 604px;
-    top: 381px; */
+.PercentileNum{ 
+    width: auto;
+    height: auto;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -466,11 +360,8 @@ color: #566474;
 }
 
 .ScoreNum{
-    /* position: absolute; */
-    width: 66px;
+    width: 64px;
     height: 29px;
-    /* left: 840px;
-    top: 381px; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -481,10 +372,8 @@ color: #566474;
 }
 
 .rankName{
-    /* position: absolute; */
     width: 63px;
     height: 16px;
-    /* left: 367px; */
     top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -497,10 +386,8 @@ color: #566474;
 }
 
 .PercentileName{
-    /* position: absolute; */
     width: 65px;
     height: 16px;
-    /* left: 604px; */
     top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -510,14 +397,11 @@ color: #566474;
     letter-spacing: -0.02em;
     color: #9EAAB7;
     margin-top: 5px;
-
 }
 
 .ScoreName{
-    /* position: absolute; */
     width: 110px;
     height: 16px;
-    /* left: 840px; */
     top: 80px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -527,16 +411,12 @@ color: #566474;
     letter-spacing: -0.02em;
     color: #9EAAB7;
     margin-top: 5px;
-
 }
 
 .GraphBox{
-    width: 757px;
-    height: 525px;
     border: 1px solid #EBF0F5;
+    padding: 30px;
     border-radius: 10px;
-    margin-top: 206px;
-    /* border: 1px solid black; */
 }
 
 .GraphHead{
@@ -549,13 +429,12 @@ color: #566474;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
-    /* border: 1px solid black; */
-    margin-left: 30px;
-    margin-top: 30px;
 }
 
 .GraphData{
-    /* border: 1px solid black; */
+    padding: auto;
+    position: relative;
+    display: flex;
 }
 
 .PercentileShow{     
@@ -565,26 +444,27 @@ color: #566474;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    /* line-height: 150%; */
     letter-spacing: -0.02em;
     color: #566474;
     text-align: left;
-    margin-left: 30px;
+    position: relative;
+}
+
+.GraphIcon{
+    margin: 10px 80px 0px auto;
 }
 
 .LinePercentile{
-    /* border: 1px solid black; */
     width: 694px;
     height: 307px;
 }
 
-
 .QuesPie{
-    /* border: 2px red solid; */
-    width: 60%;
-    margin-top:200px;
     border: 1px solid #EBF0F5;
+    width: 50%;
+    margin:-73% 0% 0% 103%;
     border-radius: 10px;
+    padding: 30px;
 }
 
 .PieHead{
@@ -593,13 +473,9 @@ color: #566474;
 }
 
 .QuesHead{
-    /* position: absolute; */
     width: 134px;
     height: 28px;
-    margin-top: 31px;
-    margin-left: 30px;
-    /* left: 1044px;
-    top: 654px; */
+    margin: 0px 0px 0px 0px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -607,7 +483,6 @@ color: #566474;
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
-    /* border: 2px red solid; */
 }
 
 .QuesNumber{
@@ -616,25 +491,17 @@ color: #566474;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    margin-top: 34px;
-    margin-right: 30px;
-    /* identical to box height */
     letter-spacing: -0.02em;
-    /* border: 2px red solid; */
     color: #438AF6;
-
 }
 
 .QuesDesc{
-    /* border: 2px red solid; */
     margin-top:20px;
     text-align: left;
-    margin-left: 30px;
 }
 
 
 .QuesAnalysis{
-    /* position: absolute; */
     width: 326px;
     height: 42px;
     left: 1044px;
@@ -649,94 +516,80 @@ color: #566474;
 }
 
 .PieGraph{
-    /* position: absolute; */
-    width: 180.87px;
-    height: 166.02px;
-    /* left: 1130.98px; */
-    /* top: 972.94px; */
-    /* background: #438AF6; */
-    /* border-radius: 2px; */
     transform: rotate(-90deg);
-    /* border: 2px red solid; */
-    z-index: -1;
+    position: relative;
 }
 
 .Arrow{
-    position: relative;
-   /* border: 2px red solid; */
-   top: 200px;
-   left: 10px;
-   z-index: 1;
+   position: absolute;
+   margin-top: 20%;
+   margin-left: 24%;
 }
 
 .AnswersPie{
-    /* position: absolute; */
-    /* width: 386px;
-    height: 393px; */
-    /* left: 1014px;
-    top: 623px; */
-    /* border: 2px red solid; */
     padding: 60px;
-    /* z-index: -1; */
-    /* border: 1px solid #EBF0F5; */
-    /* box-sizing: border-box; */
-    /* border-radius: 10px; */
+    position: relative;
 }
 
-
 .RightPanel{
-    border: 2px green solid;
+    margin: auto;
 }
 
 .SyllabAnalysis{
-
-    box-sizing: border-box;
-    /* border: 2px green solid; */
-    position: absolute;
-    width: 386px;
-    height: 429px;
-    margin-left: 30px;
-    /* border: 1px solid #EBF0F5; */
+    border: 1px solid #EBF0F5;
+    height: auto;
+    width: 25%;
     border-radius: 10px;
-    /* border: 1px solid black; */
-    /* border: 1px solid #EBF0F5; */
-    /* box-sizing: border-box; */
-    /* border-radius: 10px; */
+    padding: 30px 30px 30px 30px;
+    margin-top: 75px;
+    margin-left: 70.5%;
 }
+
 .testTags{
-    margin-left: 30px;
-    /* border: 2px red solid; */
     text-align: left;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #566474;
+    width: 70%;
 }
 
-
-.HTML{
-    margin-left: 30px;
-    /* border: 2px red solid; */
+.Topics{
+    margin-bottom: 4px;
 }
 
-.TAGS{
-    margin-left: 30px;
-    /* border: 2px red solid; */
+.percentage{
+    margin: 0px 0px 0px 94px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
 }
 
-.TABLES{
-    margin-left: 30px;
-    /* border: 2px red solid; */
+div.SyllabAnalysis div:nth-child(2){
+    color: #438AF6;
 }
 
-.FORMS{
-    margin-left: 30px;
-    /* border: 2px red solid;    */
+div.SyllabAnalysis div:nth-child(3){
+    color: #FF9142;
 }
 
+div.SyllabAnalysis div:nth-child(4){
+    color: #FB5E5E;
+}
+
+div.SyllabAnalysis div:nth-child(5){
+    color: #2EC971;
+}
 
 .Syllabheader{
     width: 166px;
     height: 28px;
-    margin-top: 30px;
-    margin-left: 30px;
-    /* border: 2px red solid; */
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;

@@ -5,24 +5,17 @@ import { Doughnut } from 'react-chartjs-2'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Chart } from 'react-chartjs-2'
 import Modal from './Modal'
-import skill from '../../src/components/image4.png'
-import rank from '../../src/components/rank.png'
-import percentile from '../../src/components/percentile.png'
-import score from '../../src/components/score.png'
-import Arrow from '../../src/components/QuesAir.png'
-// import eclipse from '../../src/components/eclipse.png'
+import skill from '../assets/image4.png'
+import score from '../assets/score.png'
+import Arrow from '../assets/QuesAir.png'
+import Ellipse from '../assets/Ellipse125.png'
+import graph from '../assets/graph.png'
+import score1 from '../assets/score1.png'
+import trophy from '../assets/trophy.png'
+import SyllabAnalysis from './SyllabAnalysis'
 
 function SkillTest() {
 
-  // let customRadius = ( percentile ) =>
-  // {
-    
-  //   let index = percentile.dataIndex;
-  //   let value = context.dataset.data[ index ];
-  //   return index === 3 || value >= 8 ?
-  //          10 :
-  //          2;
-  // }
   const [show,setShow] = useState(false)
   const [rank,setRank] = useState(5)
   const [percentile,setPercentile] = useState(97)
@@ -45,7 +38,7 @@ function SkillTest() {
   const onPercentileIncrease = () =>{
                                         if(percentile<maxPercentile)
                                         {
-                                          setPercentile(percentile => percentile + 1 );
+                                          setPercentile(percentile => percentile + 1 )
                                         }
   
   
@@ -82,174 +75,184 @@ function SkillTest() {
     'currentscore':currentscore
   }
   
-
   return (
-
-
-    <div className='CenterGrid'>
+    <div className='CenterGrid'>    
       <div className='textHead'>Skill Test</div>
-
       <div className='SkillContainer'>
-        <div className='icon'><img src={skill}></img></div>
+        <div className='icon'>
+          <img src={skill} alt='Sorry'></img>
+        </div>
         <div className='contentSkill'>
           <div className='SkillName'>Hypertext Markup Language</div>
-          <div className='SkillDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div>
+          <div className='SkillDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div> 
         </div>
-        <div>
-          <button 
-            onClick={showModal} 
-            className='ModalToggler'>Update</button>
-        </div>
-        {/* <div className='TestHeading'>Hypertext Markup Language</div>
-        <div className='TestDetails'>Questions : 08  |  Duration : 15 mins  |  Submitted on 5 June 2021</div> */}
+        <button 
+          onClick={showModal} 
+          className='ModalToggler'>Update
+        </button>
       </div>
 
+      <div className='QuickStats'>
+        <div className='QuickStatsHeading'>Quick Statistics</div>
+        <div className='QuickStatsContent'>
+          <div className='rankContent'>
+            <div className='rankIcon'>
+              <div className='Ellipse'>
+                <img src={Ellipse} alt='Sorry'></img>
+                <div className='Trophy'>
+                  <img src={trophy} alt='Sorry'></img>
+                </div>
+              </div>
+            </div>
+            <div className='rank'>
+              <span className='rankNum'>{rank}</span>
+              <span className='rankName'>YOUR RANK</span>  
+            </div>
+          </div>
+      
+          <div className='Line'></div>
 
-<div className='QuickStats'>
+          <div className='percentileContent'>
+            <div className='percentileIcon'>
+              <div className='Ellipse'>
+                <img src={Ellipse} alt='Sorry'></img>
+                <div className='Trophy'>
+                  <img src={score1} alt='Sorry'></img>
+                </div>
+              </div>
+            </div>
+            <div className='percentile'>
+              <span className='PercentileNum'>{percentile}%</span>
+              <span className='PercentileName'>PERCENTILE</span>  
+            </div>
+          </div>
 
-  <div className='QuickStatsHeading'>Quick Statistics</div>
+          <div className='Line'></div>
 
-  <div className='QuickStatsContent'>
-
-      <div className='rankContent'>
-        <div className='rankIcon'><img src={rank}></img></div>
-        <div className='rank'>
-          <span className='rankNum'>{rank}</span>
-          <span className='rankName'>YOUR RANK</span>  
+          <div className='scoreContent'>
+            <div className='scoreIcon'>
+              <div className='Ellipse'>
+                <img src={Ellipse} alt='Sorry'></img>
+                  <div className='Trophy'>
+                    <img src={score} alt='Sorry'></img>
+                  </div>
+              </div>
+            </div>
+            <div className='score'>
+              <span className='ScoreNum'>{currentscore}/15</span>  
+              <span className='ScoreName'>CORRECT ANSWERS</span>  
+            </div>
+          </div>          
         </div>
       </div>
-    
-      <div className='Line'></div>
 
-      <div className='percentileContent'>
-        <div className='percentileIcon'><img src={percentile}></img></div>
-        <div className='percentile'>
-        <span className='PercentileNum'>{percentile}%</span>
-        <span className='PercentileName'>PERCENTILE</span>  
-      </div>
-      </div>
-
-      <div className='Line'></div>
-
-      <div className='scoreContent'>
-        <div className='scoreIcon'><img src={score}></img></div>
-        <div className='score'>
-          <span className='ScoreNum'>{currentscore}/15</span>  
-          <span className='ScoreName'>CORRECT ANSWERS</span>  
-        </div>
+      <div className='GraphBox'>
+        <h1 className='GraphHead'>Comparison Graph</h1>
+        <p className='GraphData'>
+          { 
+            percentile<72?<p className='PercentileShow'>You scored {percentile}% percentile which is lower than 72% which is the average percentile of all  those who took this test</p>:<p className='PercentileShow'>You scored {percentile}% percentile which is higher than 72% which is the average percentile of all those who took this test</p>
+          } 
+          <div className='GraphIcon'>
+            <div className='Ellipse'>
+              <img src={Ellipse} alt='Sorry'></img>
+              <div className='Trophy'>
+                <img src={graph} alt='Sorry'></img>
+              </div>
+            </div>
+          </div>
+        </p>
+        <Line 
+          value={percentile}
+          className='LinePercentile'
+          options={{
+                      scales:{x:{ grid:{display:false,drawBorder:false}},y:{ grid:{display:false,drawBorder:false},ticks:{display:false}  }},
+                      legend:{display:false},
+                      responsive:true,
+                      plugins:{
+                        tooltip:{
+                          callbacks: {
+                                        label: function(context) {
+                                          let label = context.dataset.label;
+                                          label = '';
+                                          return label;
+                                        } 
+                                  },   
+                          // enabled:false,
+                          // backgroundColor:'red',
+                          backgroundColor: '#1E272E',
+                          // borderWidth:'2px',
+                          padding:20,
+                          titleFont:{weight:'700',family:'DM Sans',size:18},
+                          titleColor:'#FFFFFF',
+                          cornerRadius:5,
+                          caretPadding:25,
+                          caretSize:10,
+                          // yAlign:100
+                          // border-radius: 5px,
+                        }
+                      }
+                    }} 
+          data={{
+                labels: ['0%', '20%', '40%' ,'60%','80%','100%'],
+                datasets: [{
+                    label:' ',
+                    data:[5,66,9,42,5,95,5],
+                    borderColor:'#C8D6E5',
+                    tension:0.5
+                  }],
+                }}
+        />
       </div>          
-  </div>
-</div>
 
-<div className='GraphBox'>
-  
-  <h1 className='GraphHead'>Comparison Graph</h1>
-  <p className='GraphData'>
-  { 
-    percentile<72?<p className='PercentileShow'>You scored {percentile}% percentile which is lower than 72% which is the average percentile of all  those who took this test</p>:<p className='PercentileShow'>You scored {percentile}% percentile which is higher than 72% which is the average percentile of all those who took this test</p>
-  } 
-  </p>   
+      <Modal 
+          data={data} 
+          onRankIncrease={onRankIncrease}
+          onRankDecrease={onRankDecrease}
+          onPercentileIncrease={onPercentileIncrease}
+          onPercentileDecrease={onPercentileDecrease}
+          onCurrentScoreIncrease={onCurrentScoreIncrease}
+          onCurrentScoreDecrease={onCurrentScoreDecrease}
+          handleClose={hideModal}
+      />   
 
+      <div className='QuesPie'>
+        <div className='PieHead'>
+          <span className='QuesHead'>Question Analysis</span>
+          <span className='QuesNumber'>{currentscore}/15</span>
+        </div>
+        <div className='QuesDesc'>      
+          { 
+            currentscore<15?<span className='QuesAnalysis'>You score {currentscore} questions correct out of 15. However it still needs improvements.</span>:<span className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</span>
+          }
+        </div>
+          <div className='AnswerPie'>
+            <img className='Arrow' src={Arrow} alt='Sorry'></img>
+            <Doughnut 
+              className='PieGraph'
+              data={{
+                      datasets: [{
+                                  data:[currentscore,15-currentscore],
+                                  backgroundColor: [
+                                                    '#438AF6',
+                                                    'rgba(67, 138, 246, 0.1)'
+                                                  ],
 
+                                }],
+                          }}
+              options={{ 
+                          cutout:120,
+                          rotation:90,
+                          radius:150,         
+                        }}
+            >
+              
+            </Doughnut>
+          </div>
+        </div> 
 
-
-
-
-
-  <Line 
-      className='LinePercentile'
-      options={
-                  {
-                    scales:{x:{ grid:{display:false,drawBorder:false}},y:{ grid:{display:false,drawBorder:false},ticks:{display:false}  }},
-                    legend:{display:false},
-                    // elements:{line:{borderWidth:'1px'}}
-                  }
-              } 
-      data={{
-              labels: ['0%', '20%', '40%' ,'60%','80%','100%'],
-              datasets: [{
-                  label:'none',
-                  data:[5,66,9,42,5,95],
-                  // borderWidth:'1px',
-                  borderColor:'#C8D6E5',
-                  // pointRadius:'0px',
-                  tension:0.5
-                }],
-            }}
-            
-    />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>     
-
-
-<div className='QuesPie'>
-
-  <div className='PieHead'>
-    <span className='QuesHead'>Question Analysis</span>
-    <span className='QuesNumber'>{currentscore}/15</span>
-  </div>
-
-  <div className='QuesDesc'>      
-  { 
-    currentscore<15?<span className='QuesAnalysis'>You score {currentscore} questions correct out of 15. However it still needs improvements.</span>:<span className='QuesAnalysis'>You score {currentscore} correct out of 15.Congratulations!!</span>
-  }
-  </div>
-
-  <div className='AnswersPie'>
-      <img className='Arrow' src={Arrow}></img>
-      <Doughnut 
-                className='PieGraph'
-                datasetIdKey='id'
-                data={{
-                        datasets: [
-                          {
-                            data:[currentscore,15-currentscore],
-                            // borderWidth:'100px',
-                            // radius:'10px',
-                            backgroundColor: [
-                              '#438AF6',
-                              'rgba(67, 138, 246, 0.1)'
-                            ],
-                          },
-                        ],
-                      }}
-      />
-  </div>
-
-
-</div>            
-
-
-<Modal 
-    data={data} 
-    onRankIncrease={onRankIncrease}
-    onRankDecrease={onRankDecrease}
-    onPercentileIncrease={onPercentileIncrease}
-    onPercentileDecrease={onPercentileDecrease}
-    onCurrentScoreIncrease={onCurrentScoreIncrease}
-    onCurrentScoreDecrease={onCurrentScoreDecrease}
-    // handleSave={saveData}
-    handleClose={hideModal}
-/> 
-    
     </div>
+
+    
   )
 }
 
